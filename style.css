@@ -1,0 +1,74 @@
+body{
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.form{
+    width: 300px;
+    height: 400px;
+    margin: 100px auto;
+    background-color: rgba(178, 245, 255, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+}
+.form h2{
+    text-align: center;
+    font-weight: 900;
+    font-size: 28px;
+    color: rgb(254, 254, 254);
+}
+.radio label{
+    color: aliceblue;
+}
+.input input{
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    margin: 5px 5px 15px 0px;
+    border: 1px solid #555;
+    outline: none;
+    box-sizing: border-box;
+    border-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3),0 6px 20px 0 rgba(0, 0, 0, 0.20);
+}
+.radio input{
+    width: 30px;
+    transform: scale(1.5);
+}
+.radio input:checked {
+    outline: invert;
+    width: 30px;
+  }
+.input input:focus{
+    background-color: lightblue;
+    border-color: rgb(96, 236, 255);
+  }  
+.submit{
+    text-align: center;
+    margin-top: 30px;
+}  
+.submit button{
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px;
+    border: #555;
+    color: rgba(48, 51, 107,1.0);
+    background-color: rgb(167, 210, 241);
+    border-radius: 5px;
+}
+.submit button:hover{
+    background-color: rgb(51, 165, 246);
+    transform: scale(1.1);
+}
+#text {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+.owner h2{
+    color: aliceblue;
+    text-align: center;
+}
