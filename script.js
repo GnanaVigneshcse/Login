@@ -6,7 +6,7 @@ function submitForm() {
 
     if (name && email && message) {
         text.textContent = `Thank you for your submission, ${name}!`;
-        text.style.color = 'lightgreen';
+        text.style.color = 'black';
 
         // Clear the form fields
         document.getElementById('myForm').reset();
