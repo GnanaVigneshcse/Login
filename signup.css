@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Sixtyfour+Convergence&display=swap');
+* {
+    font-family: "Itim", cursive;
+    margin: 0;
+    padding: 0;
+  }
+  
+body{
+    background-image: url('bg.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.form{
+    width: 300px;
+    height: 450px;
+    margin: 50px auto 0 auto;
+    background-color: rgba(178, 245, 255, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+}
+.form h2{
+    text-align: center;
+    font-weight: 900;
+    font-size: 28px;
+    color: rgb(254, 254, 254);
+    margin-bottom: 10px;
+}
+.radio label{
+    color: aliceblue;
+}
+.input input{
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    margin: 5px 5px 15px 0px;
+    border: 1px solid #555;
+    outline: none;
+    box-sizing: border-box;
+    border-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3),0 6px 20px 0 rgba(0, 0, 0, 0.20);
+}
+.radio input{
+    width: 30px;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+.radio input:checked {
+    outline: invert;
+    width: 30px;
+  }
+.input input:focus{
+    background-color: lightblue;
+    border-color: rgb(96, 236, 255);
+  }  
+.submit{
+    text-align: center;
+    margin-top: 30px;
+}  
+.submit button{
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px;
+    border: #555;
+    color: rgba(48, 51, 107,1.0);
+    background-color: rgb(167, 210, 241);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.submit button:hover{
+    background-color: rgb(51, 165, 246);
+    transform: scale(1.1);
+}
+#text {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background-color:rgb(51, 51, 51);
+}
+.logo{
+    cursor: pointer;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px whitesmoke;
+}
+.nav-links{
+    list-style: none;
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-links li a:hover{
+    color: aqua;
+}
+span{
+    color: aqua;
+    text-shadow: 2px 2px 8px lightblue;
+}
+.menulist{
+    height: 3px;
+    width: 20px;
+    background-color: aqua;
+    margin-bottom: 3px;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+@media all and (max-width:660px){
+    header{
+        flex-direction: column;
+    }
+    .nav-links li{
+        display: block;
+        padding: 10px 0;
+    }
+    ul{
+        text-align: center;
+        padding: 0;
+        display: none;
+    }
+    .logo{
+        align-self: flex-start;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+    }
+    .showmenu{
+        display: block;
+    }
+}

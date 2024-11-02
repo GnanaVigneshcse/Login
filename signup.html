@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myproject</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <header>
+        <a href="" class="logo">VEB <SPAN>CITE</SPAN></a>
+    <nav class="navbar">   
+        <ul class="nav-links">
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#birds">Contact</a></li>
+        </ul>
+        <div class="menu">
+            <div class="menulist"></div>
+            <div class="menulist"></div>
+            <div class="menulist"></div>
+        </div>
+    </nav>
+</header>
+    <div class="form">
+        <form id="myForm" action="">
+        <h2>LOGIN</h2>
+        <div class="input">
+            <input type="text" placeholder="Username" id="user" required>
+        </div>
+        <div class="input">
+            <input type="password" id="pass" placeholder="Password" required>
+        </div>
+        <div class="input">
+            <input type="password" id="cpass" placeholder="Confirm Password" required>
+        </div>
+        <div class="input">
+            <input type="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="radio">
+            <input type="radio" name="gender" id="radio">
+            <label for="radio">Male</label>
+            <input type="radio" name="gender" id="radio">
+            <label for="radio">Female</label>
+        </div>
+        <div class="submit">
+            <button type="submit" onclick="submitForm()">LOGIN</button>
+        </div>
+        <div id="text"></div>
+    </form>
+    </div>
+   
+    <script src="signup.js"></script>
+</body>
+</html>
