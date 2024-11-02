@@ -3,13 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Myproject</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="owner"><h2>VICKY creation</h2></div>
+    <header>
+        <a href="">VEB <SPAN>SITE</SPAN></a>
+    <nav class="navbar">   
+        <ul>
+            <li><a href="">Sign Up</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Home</a></li>
+
+        </ul>
+    </nav>
+</header>
     <div class="form">
-        <form id="myForm">
+        <form id="myForm" action="">
         <h2>LOGIN</h2>
         <div class="input">
             <input type="text" placeholder="Username" id="user" required>
@@ -27,7 +38,7 @@
             <label for="radio">Female</label>
         </div>
         <div class="submit">
-            <button type="submit" onclick="submitForm()">SUBMIT</button>
+            <button type="submit" onclick="submitForm()">LOGIN</button>
         </div>
         <div id="text"></div>
     </form>
