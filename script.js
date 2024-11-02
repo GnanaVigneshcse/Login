@@ -1,10 +1,8 @@
 function submitForm() {
     const name = document.getElementById('user').value;
     const email = document.getElementById('pass').value;
-    const message = document.getElementById('email').value;
-    const responseMessage = document.getElementById('radio').value;
 
-    if (name && email && message) {
+    if (name && email) {
         text.textContent = `Thank you for your submission, ${name}!`;
         text.style.color = 'black';
 
@@ -15,3 +13,8 @@ function submitForm() {
         text.style.color = 'red';
     }
 }
+const menu = document.querySelector('.menu')
+const menuList = document.querySelector('nav ul')
+menu.addEventListener('click',()=>{
+    menuList.classList.toggle('showmenu')
+})
