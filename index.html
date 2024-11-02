@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Myproject</title>
     <link rel="stylesheet" href="style.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
 </head>
 <body>
     <header>
-        <a href="">VEB <SPAN>SITE</SPAN></a>
+        <a href="" class="logo">VEB <SPAN>CITE</SPAN></a>
     <nav class="navbar">   
-        <ul>
-            <li><a href="">Sign Up</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Home</a></li>
-
+        <ul class="nav-links">
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#birds">Contact</a></li>
         </ul>
+        <div class="menu">
+            <div class="menulist"></div>
+            <div class="menulist"></div>
+            <div class="menulist"></div>
+        </div>
     </nav>
 </header>
     <div class="form">
@@ -28,22 +33,33 @@
         <div class="input">
             <input type="password" id="pass" placeholder="Password" required>
         </div>
-        <div class="input">
-            <input type="email" id="email" placeholder="Email" required>
-        </div>
-        <div class="radio">
-            <input type="radio" name="gender" id="radio">
-            <label for="radio">Male</label>
-            <input type="radio" name="gender" id="radio">
-            <label for="radio">Female</label>
-        </div>
         <div class="submit">
             <button type="submit" onclick="submitForm()">LOGIN</button>
         </div>
         <div id="text"></div>
     </form>
     </div>
-   
+    <div class="space"></div>
+   <footer id="birds">
+    <div class="container">
+        <div class="foot-content">
+            <h3>Contact Us</h3>
+            <p>Email:Info@vebcite.com</p>
+            <p>Phone:+121 98548 98254</p>
+            <p>Address:123,eg street,vebcity.</p>
+        </div>
+        <div class="foot-content">
+            <h3>Follow Us</h3>
+            <li><a href=""><i class="fab fa-facebook"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+        </div>
+    </div>
+    <div class="bottom-bar">
+        <p>&copy; 2024 vebcite company . All rights reserved</p>
+    </div>
+   </footer>
     <script src="script.js"></script>
 </body>
 </html>
